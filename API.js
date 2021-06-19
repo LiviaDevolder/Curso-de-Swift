@@ -1,14 +1,11 @@
-npm install --save express body-parser
+npm install express --save
 
 var express = require("express")
-var bodyParser = require("body-parser")
 
-var ListaDAO = require("./ListaDAO")
+var app = express()
 
-var app = express();
+app.get("/teste", function(request, response){
+    console.log("Rota /teste acessada com sucesso!")
+})
 
-app.use(bodyParser.json())
-
-GET http://localhost:8080/lista { "nome" : }
-
-app, listen(8080)
+app.listen(8080)
