@@ -1,8 +1,8 @@
 var express = require("express")
 var app = express()
 
-app.get("/teste", function(request, response) {
-    console.log("Rota /teste acessada com sucesso!")
+app.get("agenda", function(request, response) {
+    console.log("Rota /agenda acessada com sucesso!")
 })
 
-app.listen(8080)
+app.listen(8000)
